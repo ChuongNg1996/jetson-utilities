@@ -7,4 +7,4 @@ Utilities of Jetson (Nano) boards for my projects
 
 ## UART
 * [Repo by JetsonHacks](https://github.com/JetsonHacksNano/UARTDemo)
-* Tested with PC: use a **Serial Port Monitor** port monitor and a **USB to TTL Serial Converter** device (TTL not RS-232).
+* Tested with PC: use a **Serial Port Monitor** program and a **USB to TTL Serial Converter** device (TTL not RS-232).

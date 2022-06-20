@@ -8,3 +8,4 @@ Utilities of Jetson (Nano) boards for my projects
 ## UART
 * Sample UART on Jetson: [Repo by JetsonHacks](https://github.com/JetsonHacksNano/UARTDemo)
 * Tested with PC: use a **Serial Port Monitor** program and a **USB to TTL Serial Converter** device (TTL not RS-232).
+* Tested with Arduino: use [Serial.begin($baud_rate)](https://www.arduino.cc/reference/en/language/functions/communication/serial/begin/) and [Serial.write($content)](https://www.arduino.cc/reference/en/language/functions/communication/serial/write/)

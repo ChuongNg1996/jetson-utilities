@@ -23,5 +23,5 @@ Use ```ros_keyboard``` package to control PWM pins of the Jetson board:
 Use **IMU MPU 9265** to make the robot run straight:
 * For python, run ```python3 mpu9265_export_to_file.py``` to read IMU and store in a text file, ```python3 pwm_read_imu.py``` to read IMU data from text file and adjust the motors accordingly. For ros, ```roscore``` -> ```rosrun mpu9265_ros imu_pub_1.py``` (to publish IMU data to ros network).
 
-Use hall sensors of GA25 motors:
-* For python, run both ```python3 hall_1_reading.py``` and ```python3 hall_2_reading.py```, both writes each hall sensor to a text file. For ros, 
+Use **hall sensors** of GA25 motors:
+* For python, run both ```python3 hall_1_reading.py``` and ```python3 hall_2_reading.py```, both writes each hall sensor to a text file. For ros, ```roscore``` -> ```rosrun hall_data_pub dead_reckoning_imu_mixed.py``` or ```rosrun hall_data_pub dead_reckoning_pos.py```. 

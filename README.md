@@ -25,3 +25,7 @@ Use **IMU MPU 9265** to make the robot run straight:
 
 Use **hall sensors** of GA25 motors:
 * For python, run both ```python3 hall_1_reading.py``` and ```python3 hall_2_reading.py```, both writes each hall sensor to a text file. For ros, ```roscore``` -> ```rosrun hall_data_pub dead_reckoning_imu_mixed.py``` or ```rosrun hall_data_pub dead_reckoning_pos.py```. 
+
+Command robot to go to a point:
+* On Jetson, run all above except ```python3 pwm_read_imu.py```. Also, run ```rosrun mobile_robot_point_cmd mobile_robot_cmd_1.py```. 
+* On Laptop/GroundStation, command ros message to ```pose_goal``` topic to define desired x, y position.

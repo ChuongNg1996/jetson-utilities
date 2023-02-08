@@ -12,7 +12,11 @@ Utilities of Jetson (Nano) boards for my projects
 * For PWM, the ```ChangeDutyCycle()``` use percentage, so its value ranges from 0 to 100.
 
 ## ROS (ROS 1)
-* Jetson (Robot) & Laptop/GroundStation connect to same network, have proper ROS Network Config in [link](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)
+* Jetson (Robot) & Laptop/GroundStation connect to same network, have proper ROS Network Config in [link](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/).
+
 Use ```ros_keyboard``` package to control PWM pins of the Jetson board:
 * On Laptop/Ground station, install ```ros_keyboard``` package.
-* ON Jetson, [Terminal 1] (by default, at ```\home``` directory) run ```python3 simple_pwm.py``` (which constantly read case command from a text file), [Terminal 2] run ```roscore```, [Terminal 3] run ```rosrun motor_control command_read_1.py```. Auto run all of them by using ***Startup Applications Preferences*** on Ubuntu.
+* On Jetson, [Terminal 1] (by default, at ```\home``` directory) run ```python3 simple_pwm.py``` (which constantly reads case command from a text file), [Terminal 2] run ```roscore```, [Terminal 3] run ```rosrun motor_control command_read_1.py``` (which constantly writes case command to the text file, default at ```\home```). Auto run all of them by using ***Startup Applications Preferences*** on Ubuntu.
+* Use ```rosrun keyboard keyboard``` on Laptop with WASD keys to send command.
+
+Use IMU MPU 9265 to make the robot run straight

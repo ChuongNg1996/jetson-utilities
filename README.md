@@ -29,3 +29,6 @@ Use **hall sensors** of GA25 motors:
 Command robot to go to a point:
 * On Jetson, run all above except ```python3 pwm_read_imu.py```. Also, run ```rosrun mobile_robot_point_cmd mobile_robot_cmd_1.py```. 
 * On Laptop/GroundStation, command ros message to ```pose_goal``` topic to define desired x, y position.
+
+## MISC
+* To run a script/command on boot -> Use  ```rc.local```, [link](https://www.lukmanlab.com/how-to-activing-rc-local-on-ubuntu-server-18-04/).
